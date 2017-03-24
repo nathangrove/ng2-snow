@@ -231,7 +231,7 @@ function delete_unused_images(uploaded_images,callback){
     var req = http.request(options, function(res) {
       const statusCode = res.statusCode; 
       if (statusCode !== 201) {
-        error("Image upload failed with status code " + statusCode + " for image: " + file);
+        error("Image upload failed with status code " + statusCode + " for image: " + image);
         return;
       }
 
